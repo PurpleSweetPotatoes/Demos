@@ -1,0 +1,16 @@
+//
+//  demosPCH.pch
+//  tianyaTest
+//
+//  Created by baiqiang on 2019/1/4.
+//  Copyright © 2019年 baiqiang. All rights reserved.
+//
+
+#ifndef demosPCH_pch
+#define demosPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "BQKit.h"
+
+#endif /* demosPCH_pch */

@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.3)
+  - FLAnimatedImage (1.0.12)
+  - GPUImage (0.1.7)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - XHLaunchAd (3.9.8):
+    - FLAnimatedImage (~> 1.0.12)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZFPlayer (3.2.5):
+    - ZFPlayer/Core (= 3.2.5)
+  - ZFPlayer/AVPlayer (3.2.5):
+    - ZFPlayer/Core
+  - ZFPlayer/ControlView (3.2.5):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.2.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.1)
+  - CocoaAsyncSocket (~> 7.6.3)
+  - GPUImage
+  - SDWebImage (= 4.4.2)
+  - XHLaunchAd (~> 3.9.8)
+  - YYKit (~> 1.0.9)
+  - ZFPlayer (~> 3.2.1)
+  - ZFPlayer/AVPlayer (~> 3.0)
+  - ZFPlayer/ControlView (~> 3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CocoaAsyncSocket
+    - FLAnimatedImage
+    - GPUImage
+    - SDWebImage
+    - XHLaunchAd
+    - YYKit
+    - ZFPlayer
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  XHLaunchAd: 45048592af01aa501c9d2d0c45e95ca74c4d0596
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZFPlayer: 34d9832d40240971af45a27e1227c4fa97325d5a
+
+PODFILE CHECKSUM: 844e6f56b519230bf410f08c53cab60824516240
+
+COCOAPODS: 1.5.2
