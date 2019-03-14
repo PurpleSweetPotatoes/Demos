@@ -19,9 +19,12 @@
     [super viewDidLoad];
     
     BQSwipeSubTableVc * swipVc = [[BQSwipeSubTableVc alloc] init];
-    
+    swipVc.navBottom = self.navigationController ? KNavBottom : 0;
     UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.sizeW, 15 * self.view.sizeW / 24)];
     imgView.image = [UIImage imageNamed:@"1.jpg"];
+    imgView.userInteractionEnabled = YES;
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
+    [imgView addGestureRecognizer:tap];
     swipVc.headerView = imgView;
     
     UIView * barView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.sizeW, 44)];
@@ -33,9 +36,10 @@
     for (NSInteger i = 0; i < arr.count; i++) {
         UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.frame = CGRectMake(btnWidth * i, 0, btnWidth, barView.sizeH);
-        btn.backgroundColor = [UIColor randomColor];
+        btn.backgroundColor = [UIColor clearColor];
         btn.tag = i;
         [btn setTitle:arr[i] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
         [barView addSubview:btn];
         
@@ -69,4 +73,7 @@
     [self.swipVc switchToTabVc:sender.tag];
 }
 
+- (void)tapGestureAction:(UITapGestureRecognizer *)sender {
+    NSLog(@"广告位点击");
+}
 @end
